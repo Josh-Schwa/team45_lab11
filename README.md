@@ -22,8 +22,7 @@ This lab was very informative about how to use D-flip flops in connection with a
 ## Lab Questions
 
 ### 1 - Why does the Modulo Counter actually divide clocks by 2 * Count?
-Each D-flip flop has a feedback loop that feeds back into the full adder and the output of the full adder therefore back into the input for the D-flip flop. Since the D flip flop outputs only on the clock rising edge, it will have to wait between its first time and the second time for the clock to reach that rising edge. This takes twice the amount of time and therefore half of the frequency. Each time you feedback, you are taking the previous output from the D-flip flop and waiting an additional clock cycle.
-
+Whenever the counter reaches the desired count, it toggles. Since a single Hz comes from the transition from high to low and back to high, we have to toggle twice to get the value of one Hz.
 
 ### 2 - Why does the ring counter's output go to all 1s on the first clock cycle?
 
