@@ -25,7 +25,7 @@ This lab was very informative about how to use D-flip flops in connection with a
 Whenever the counter reaches the desired count, it toggles. Since a single Hz comes from the transition from high to low and back to high, we have to toggle twice to get the value of one Hz.
 
 ### 2 - Why does the ring counter's output go to all 1s on the first clock cycle?
-The ripple counter goes to all 1s on the first clock cycle since that is our desired count and then it counts dowwards from there.
+The ripple counter goes to all 1s on the first clock cycle since that is our desired count and then it counts dowwards from there. We had to initialize the T flip flops with our desired value.
 
 ### 3 - What width of ring counter would you use to get to an output of ~1KHz?
 C_val = (100 mHz / 2) * (1 / 1 khz)
